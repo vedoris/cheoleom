@@ -10,7 +10,6 @@ basic_commands = (
         color=0xFFFFFF,
     )
     .add_field(name="", value="", inline=False)
-    )
 )
 
 
