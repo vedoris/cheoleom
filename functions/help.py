@@ -7,12 +7,17 @@ basic_commands = discord.Embed(
     title="처럼 도움말",
     description="처럼의 명령어에 대해서 소개합니다.",
     color=0xFFFFFF,
-).add_field(
+)
+basic_commands.add_field(
+    name="`/등록`, `/탈퇴`",
+    value="봇의 서비스에 등록하거나 탈퇴합니다. 서비스에 등록하면 타이머 기능은 자동으로 활성화됩니다.",
+    inline=False,
+)
+basic_commands.add_field(
     name="타이머",
     value="<@218010938807287808> (마냥)의 강화 메시지를 자동으로 감지하여 쿨타임이 채워지면 핑을 보내는 기능입니다.",
     inline=False,
 )
-
 
 class help(commands.Cog):
     @slash_command(description="처럼의 도움말을 전송합니다.")
