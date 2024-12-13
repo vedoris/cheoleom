@@ -6,6 +6,7 @@ import utils.logging
 from discord.ext import commands
 import time
 from asyncio import sleep
+import pickle
 
 dotenv.load_dotenv()
 utils.logging.setup_logging()
