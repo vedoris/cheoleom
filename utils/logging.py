@@ -1,4 +1,5 @@
 import logging
+import sys
 
 RESET = "\033[0m"
 CYAN = "\033[1;36m"
