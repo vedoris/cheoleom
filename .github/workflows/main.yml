@@ -1,0 +1,2 @@
+- name: Conventional Commitlint
+  uses: opensource-nepal/commitlint@v1.2.0
