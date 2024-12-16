@@ -25,7 +25,7 @@ async def on_ready():
     logger.info(f"Logged in as {bot.user.name}")
     logger.info(f"Be used in {guild_count} guilds.")
 
-    bot.change_status.start()
+    change_status.start()
 
 
 @tasks.loop(seconds=5)
