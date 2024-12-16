@@ -25,10 +25,15 @@ async def on_ready():
     logger.info(f"Logged in as {bot.user.name}")
     logger.info(f"Be used in {guild_count} guilds.")
 
+    bot.change_status.start()
+
+
+@tasks.loop(seconds=5)
+async def change_status():
     await bot.change_presence(
         status=discord.Status.online,
-        activity=discord.Game(f"버전 0.0.0 - {guild_count}개의 서버에서 작동 중"),
-    )
+        activity=discord.Game(f"버전 0.1.0 - {len(bot.guilds)}개의 서버에서 작동 중"),
+        )
 
 
 # Timer
