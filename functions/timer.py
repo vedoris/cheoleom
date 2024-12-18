@@ -21,7 +21,7 @@ class Timer(commands.Cog):
                 ":cloud:",
             )
             tenmin_tuple = ":boom:"
-            channel = bot.get_guild(message.reference.guild_id).get_channel(
+            channel = self.bot.get_guild(message.reference.guild_id).get_channel(
                 message.reference.channel_id
             )
             usercommand = await channel.fetch_message(message.reference.message_id)
