@@ -10,6 +10,7 @@ import pickle
 class Timer(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
+        logger = logging.getLogger("main")
 
     @commands.Cog.listener()
     async def on_message(self, message):
